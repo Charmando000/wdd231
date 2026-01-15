@@ -1,0 +1,23 @@
+{
+    "family_Name": "Fernandez",
+    "Move_date": "2024-06-15",
+    "Number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Armando",
+            "gender": "male",
+            "birthdate": "2003-10-03"
+        },
+        {
+            "name": "Arami",
+            "gender": "female",
+            "birthdate": "1998-10-24"
+        },
+        {
+            "name": "Renzo",
+            "gender": "male",
+            "birthdate": "2000-08-05"
+        }
+    ]
+}
