@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Armando Fernandez">
+    <meta name="description" content="A directory of chamber members.">
+
+    <title>Chamber Directory</title>
+    
+    <link rel="icon" href="/wdd231/chamber/images/favicon.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Chamber of Commerce Member Directory">
+    <meta property="og:description" content="Official chamber of commerce directory showcasing local businesses and members.">
+    <meta property="og:image" content="https://charmando000.github.io/wdd231/chamber/images/chamber-og.png">
+    <meta property="og:url" content="https://charmando000.github.io/wdd231/chamber/directory.html">
+
+    <!--links-->
+    <link rel="stylesheet" href="/wdd231/chamber/style/normalize.css">
+    <link rel="stylesheet" href="/wdd231/chamber/style/small.css">
+    <link rel="stylesheet" href="/wdd231/chamber/style/larger.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce Directory</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/wdd231/index.html">Home</a></li>
+            <li><a href="/wdd231/chamber/directory.html">Directory</a></li>
+            <li><a href="/wdd231/chamber/events.html">Events</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Members</h2>
+            <div class="menu">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
+            </div>
+            <div id="directory" class="grid">
+                <!-- Member cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/armando.fernandezjara" target="_blank"><img src="/wdd231/chamber/images/facebook.svg" alt="Facebook" width="30" height="30"></a>
+            <a href="https://github.com/Charmando000" target="_blank"><img src="/wdd231/chamber/images/github.svg" alt="Twitter" width="30" height="30"></a>
+            <a href="#" aria-label="instagram profile"><img src="/wdd231/chamber/images/instagram.svg" alt="Instagram" width="30" height="30"></a>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> Armando Fernandez | Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="/wdd231/chamber/scripts/scripts.js" defer></script>
+    <script src="/wdd231/chamber/scripts/directory.js" defer></script>
+</body>
+</html>

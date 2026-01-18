@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "name": "Blue River Bakery",
+      "address": "123 Main Street, Teton, ID",
+      "phone": "208-555-1234",
+      "website": "https://blueriverbakery.com",
+      "image": "container_Pastry_JPEG.avif",
+      "membership": 3,
+      "description": "Local artisan bakery specializing in sourdough."
+    },
+    {
+      "name": "Mountain Tech Solutions",
+      "address": "45 Canyon Rd, Teton, ID",
+      "phone": "208-555-9876",
+      "website": "https://mountaintech.pk",
+      "image": "MountainTech.jpg",
+      "membership": 2,
+      "description": "IT services for small businesses."
+    },
+    {
+      "name": "Lakeside Cafe",
+      "address": "78 Lakeview Dr, Teton, ID",
+      "phone": "208-555-2468",
+      "website": "https://www.theoakslakeside.com/",
+      "image": "cafe.png",
+      "membership": 1,
+      "description": "Cozy cafe with lakeside views."
+    
+    },
+    {
+        "name": "gym",
+        "address": "871 Jet Stream Drive Rexburg, ID 83440",
+        "phone": "(208) 252-9973",
+        "website": "https://www.tetoncrossfit.com/",
+        "image": "gym.png",
+        "membership": 2,
+        "description": "Crossfit gym offering classes and personal training."
+    },
+    {
+      "name": "Teton Bookstore",
+      "address": "Valley Bookstore\n140 E. Broadway\nJackson, Wyoming 83001",
+      "phone": "(307) 733-4533",
+      "website": "https://www.valleybookstore.com/",
+      "image": "bookstore.png",
+      "membership": 1,
+      "description": "Independent bookstore with a wide selection."
+    },
+    {
+      "name": "Riverfront Inn",
+      "address": "315 W Harvard Ave\nRoseburg, Oregon 97470",
+      "phone": "(541) 672-4836",
+      "website": "https://riverfrontinnroseburg.com/",
+      "image": "inn.png",
+      "membership": 3,
+      "description": "Charming inn with river views and cozy rooms."
+    },
+    {
+      "name": "Pine Tree Landscaping",
+      "address": "300 Greenway Blvd, Teton, ID",
+      "phone": "208-555-3698",
+      "website": "https://pinetreelandscapingme.com/",
+      "image": "pine.jpg",
+      "membership": 2,
+      "description": "Professional landscaping and lawn care services."
+    }
+  ]
+}
