@@ -8,7 +8,7 @@ const SILVER_LEVEL = 1;
 // Fetch members data
 async function loadSpotlights() {
   try {
-    const response = await fetch('/chamber/data/members.json');
+    const response = await fetch('/wdd231/chamber/data/members.json');
     if (!response.ok) throw new Error('Failed to load members data');
     
     const data = await response.json();
@@ -47,7 +47,7 @@ function displaySpotlights(members) {
     const membershipLabel = member.membership === GOLD_LEVEL ? 'Gold' : 'Silver';
     html += `
       <div class="spotlight-card">
-        <img src="/chamber/images/${member.image}" alt="${member.name}">
+        <img src="/wdd231/chamber/images/${member.image}" alt="${member.name}">
         <h3>${member.name}</h3>
         <p><strong>Membership:</strong> ${membershipLabel}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
