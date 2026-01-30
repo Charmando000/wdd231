@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Armando Fernandez">
+    <meta name="description" content="Apply to join the Chamber of Commerce.">
+
+    <title>Chamber of Commerce - Join</title>
+
+    
+    <link rel="icon" href="/wdd231/chamber/images/favicon.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Chamber of Commerce - Join">
+    <meta property="og:description" content="Apply to join the Chamber of Commerce.">
+    <meta property="og:image" content="https://charmando000.github.io/wdd231/chamber/images/chamber-og.png">
+    <meta property="og:url" content="https://charmando000.github.io/wdd231/chamber/join.html">
+
+    <!--links-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/wdd231/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="/wdd231/chamber/styles/small.css">
+    <link rel="stylesheet" href="/wdd231/chamber/styles/larger.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/wdd231/chamber/index.html">Home</a></li>
+            <li><a href="/wdd231/chamber/directory.html">Directory</a></li>
+            <li><a href="/wdd231/chamber/events.html">Events</a></li>
+            <li><a href="/wdd231/chamber/join.html">Join</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Membership Application</legend>
+
+                <label>
+                    First Name
+                        <input 
+                        type="text"
+                        name="fname"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required>
+                    </label>
+                <label>
+                    Last Name
+                        <input 
+                        type="text"
+                        name="lname"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required>
+                </label>
+                <label>
+                    Organizational Title
+                    <input 
+                        type="text"
+                        name="organization"
+                        title="Enter your organizational title (min. 7 characters)"
+                        autocomplete="organization-title"
+                        pattern="[a-zA-Z\s-]{7,}">
+                </label>
+                <label>
+                    Email Address
+                        <input 
+                        type="email"
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required>
+                </label>
+                <label>
+                    Mobile Phone
+                    <input 
+                        type="tel"
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required>
+                </label>
+
+                <input type="submit" value="Join the Chamber">
+                <fieldset class="membership-level">
+                    <legend>Membership Level</legend>
+
+                    <label>
+                        <input type="radio" name="membership" value="np" required>
+                        NP Membership (Non-Profit - No Fee)
+                    </label>
+
+                    <label>
+                        <input type="radio" name="membership" value="bronze">
+                        Bronze Membership
+                    </label>
+
+                    <label>
+                        <input type="radio" name="membership" value="silver">
+                        Silver Membership
+                    </label>
+
+                    <label>
+                        <input type="radio" name="membership" value="gold">
+                        Gold Membership
+                    </label>
+                    <label>
+                        Business / Organization Description
+                        <textarea 
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="4"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <section class="membership-cards">
+                        <div class="card np">
+                            <h3>NP Membership</h3>
+                            <p>For non-profit organizations.</p>
+                            <button data-modal="npModal">View Benefits</button>
+                        </div>
+
+                        <div class="card bronze">
+                            <h3>Bronze Membership</h3>
+                            <p>Basic benefits for growing businesses.</p>
+                            <button data-modal="bronzeModal">View Benefits</button>
+                        </div>
+
+                        <div class="card silver">
+                            <h3>Silver Membership</h3>
+                            <p>More exposure and training opportunities.</p>
+                            <button data-modal="silverModal">View Benefits</button>
+                        </div>
+
+                        <div class="card gold">
+                            <h3>Gold Membership</h3>
+                            <p>Maximum visibility and premium benefits.</p>
+                            <button data-modal="goldModal">View Benefits</button>
+                        </div>
+
+
+                </fieldset>
+
+            </fieldset>
+        </form>
+            <dialog id="npModal">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free membership</li>
+                    <li>Access to community events</li>
+                    <li>Non-profit spotlight opportunities</li>
+                </ul>
+                <button class="close">Close</button>
+            </dialog>
+
+            <dialog id="bronzeModal">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Event discounts</li>
+                    <li>Business listing</li>
+                    <li>Training workshops</li>
+                </ul>
+                <button class="close">Close</button>
+            </dialog>
+
+            <dialog id="silverModal">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>Homepage spotlight</li>
+                    <li>Advertising opportunities</li>
+                    <li>Advanced training sessions</li>
+                </ul>
+                <button class="close">Close</button>
+            </dialog>
+
+            <dialog id="goldModal">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>Premium homepage placement</li>
+                    <li>Exclusive networking events</li>
+                    <li>Maximum advertising exposure</li>
+                </ul>
+                <button class="close">Close</button>
+            </dialog>
+
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/armando.fernandezjara" target="_blank"><img src="/wdd231/chamber/images/facebook.svg" alt="Facebook" width="30" height="30"></a>
+            <a href="https://github.com/Charmando000" target="_blank"><img src="/wdd231/chamber/images/github.svg" alt="Twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/charmando000" aria-label="instagram profile"><img src="/wdd231/chamber/images/instagram.svg" alt="Instagram" width="30" height="30"></a>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> Armando Fernandez | Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="/wdd231/chamber/scripts/scripts.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const ts = document.getElementById("timestamp");
+            const now = new Date();
+            ts.value = now.toISOString();
+        });
+    </script>
+
+</body>
+</html>
