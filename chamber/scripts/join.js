@@ -13,3 +13,9 @@ closeButtons.forEach(button => {
         button.closest("dialog").close();
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+            const ts = document.getElementById("timestamp");
+            const now = new Date();
+            ts.value = now.toISOString();
+        });

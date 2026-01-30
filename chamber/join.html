@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Armando Fernandez">
-    <meta name="description" content="Apply to join the Chamber of Commerce.">
+    <meta name="description" content="Apply to join the Chamber of Commerce and access networking, events, promotional opportunities, and member resources for your organization.">
 
     <title>Chamber of Commerce - Join</title>
 
@@ -14,7 +14,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Chamber of Commerce - Join">
-    <meta property="og:description" content="Apply to join the Chamber of Commerce.">
+    <meta property="og:description" content="Apply to join the Chamber of Commerce and access networking, events, promotional opportunities, and member resources for your organization.">
     <meta property="og:image" content="https://charmando000.github.io/wdd231/chamber/images/chamber-og.png">
     <meta property="og:url" content="https://charmando000.github.io/wdd231/chamber/join.html">
 
@@ -30,7 +30,7 @@
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
+        <p class="site-title">Chamber of Commerce</p>
     </header>
     <nav>
         <ul>
@@ -43,6 +43,7 @@
     </nav>
 
     <main>
+        <h1>Join the Chamber of Commerce</h1>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Membership Application</legend>
@@ -73,6 +74,16 @@
                         title="Enter your organizational title (min. 7 characters)"
                         autocomplete="organization-title"
                         pattern="[a-zA-Z\s-]{7,}">
+                </label>
+
+                <label>
+                    Organization Name
+                    <input
+                        type="text"
+                        name="orgname"
+                        title="Enter your organization name"
+                        autocomplete="organization"
+                        required>
                 </label>
                 <label>
                     Email Address
@@ -126,6 +137,7 @@
                     </label>
                     <input type="hidden" name="timestamp" id="timestamp">
                     <section class="membership-cards">
+                        <h2>Membership Benefits</h2>
                         <div class="card np">
                             <h3>NP Membership</h3>
                             <p>For non-profit organizations.</p>
@@ -150,49 +162,50 @@
                             <button data-modal="goldModal">View Benefits</button>
                         </div>
 
+                    </section>
 
                 </fieldset>
 
             </fieldset>
-        </form>
-            <dialog id="npModal">
-                <h3>NP Membership Benefits</h3>
-                <ul>
-                    <li>Free membership</li>
-                    <li>Access to community events</li>
-                    <li>Non-profit spotlight opportunities</li>
-                </ul>
-                <button class="close">Close</button>
-            </dialog>
+            </form>
+                <dialog id="npModal">
+                    <h2>NP Membership Benefits</h2>
+                    <ul>
+                        <li>Free membership</li>
+                        <li>Access to community events</li>
+                        <li>Non-profit spotlight opportunities</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
 
-            <dialog id="bronzeModal">
-                <h3>Bronze Membership Benefits</h3>
-                <ul>
-                    <li>Event discounts</li>
-                    <li>Business listing</li>
-                    <li>Training workshops</li>
-                </ul>
-                <button class="close">Close</button>
-            </dialog>
+                <dialog id="bronzeModal">
+                    <h2>Bronze Membership Benefits</h2>
+                    <ul>
+                        <li>Event discounts</li>
+                        <li>Business listing</li>
+                        <li>Training workshops</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
 
-            <dialog id="silverModal">
-                <h3>Silver Membership Benefits</h3>
-                <ul>
-                    <li>Homepage spotlight</li>
-                    <li>Advertising opportunities</li>
-                    <li>Advanced training sessions</li>
-                </ul>
-                <button class="close">Close</button>
-            </dialog>
+                <dialog id="silverModal">
+                    <h2>Silver Membership Benefits</h2>
+                    <ul>
+                        <li>Homepage spotlight</li>
+                        <li>Advertising opportunities</li>
+                        <li>Advanced training sessions</li>
+                    </ul>
+                    <button class="close">Close</button>
+                </dialog>
 
-            <dialog id="goldModal">
-                <h3>Gold Membership Benefits</h3>
-                <ul>
-                    <li>Premium homepage placement</li>
-                    <li>Exclusive networking events</li>
-                    <li>Maximum advertising exposure</li>
-                </ul>
-                <button class="close">Close</button>
+                <dialog id="goldModal">
+                    <h2>Gold Membership Benefits</h2>
+                    <ul>
+                        <li>Premium homepage placement</li>
+                        <li>Exclusive networking events</li>
+                        <li>Maximum advertising exposure</li>
+                    </ul>
+                    <button class="close">Close</button>
             </dialog>
 
 
@@ -210,13 +223,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="/wdd231/chamber/scripts/scripts.js" defer></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const ts = document.getElementById("timestamp");
-            const now = new Date();
-            ts.value = now.toISOString();
-        });
-    </script>
+    <script src="/wdd231/chamber/scripts/join.js" defer></script>
 
 </body>
 </html>
