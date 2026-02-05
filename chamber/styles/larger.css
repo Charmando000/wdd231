@@ -8,6 +8,19 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+   #discover img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #discover img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
   #discover-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:

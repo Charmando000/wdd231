@@ -173,7 +173,7 @@ nav ul li {
   align-items: center;
 }
 
-.event-card {
+#event-card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -263,7 +263,7 @@ nav ul li {
     margin: 0.5rem 0 0 0;
 }
 
-.spotlight-card {
+#spotlight-card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -272,17 +272,17 @@ nav ul li {
     text-align: center;
 }
 
-.current-weather {
+#current-weather {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-.forecast {
+#forecast {
     display: flex;
     justify-content: space-around;
 }
 
-.forecast-card {
+#forecast-card {
     text-align: center;
 }
 
@@ -379,11 +379,6 @@ form button {
     margin-bottom: 0.5rem;
 }
 
-/* small.css (DEFAULT) */
-#discover {
-	padding: 1rem;
-}
-
 .card{
 	background: #fff;
 	border-radius: 6px;
@@ -456,6 +451,13 @@ form button {
 .card.area-g { grid-area: g; }
 .card.area-h { grid-area: h; }
 
+#visit-message {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem;
+    font-weight: 500;
+}
 
 
 @media screen and (min-width: 768px) {
