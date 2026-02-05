@@ -1,0 +1,12 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+  #discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+}
+
+
