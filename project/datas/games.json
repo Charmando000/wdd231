@@ -1,0 +1,122 @@
+[
+  {
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "platform": "Nintendo Switch",
+    "year": 2017,
+    "description": "An open-world adventure with exploration and freedom.",
+    "image": "images/games/zelda-botw.webp"
+  },
+  {
+    "title": "The Last of Us",
+    "genre": "Action",
+    "platform": "PlayStation",
+    "year": 2013,
+    "description": "A story-driven survival experience.",
+    "image": "images/games/the-last-of-us.webp"
+  },
+  {
+    "title": "Undertale",
+    "genre": "RPG",
+    "platform": "PC",
+    "year": 2015,
+    "description": "An indie RPG focused on choices and consequences.",
+    "image": "images/games/undertale.webp"
+  },
+  {
+    "title": "Super Mario Odyssey",
+    "genre": "Adventure",
+    "platform": "Nintendo Switch",
+    "year": 2017,
+    "description": "An open-world adventure with exploration and freedom.",
+    "image": "images/games/mario-odyssey.webp"
+  },
+  {
+    "title": "Hades",
+    "genre": "Roguelike",
+    "platform": "PC",
+    "year": 2020,
+    "description": "A fast-paced roguelike with a compelling story.",
+    "image": "images/games/hades.webp"
+  },
+  {
+    "title": "World of Warcraft",
+    "genre": "MMORPG",
+    "platform": "PC",
+    "year": 2004,
+    "description": "An online multiplayer role-playing game.",
+    "image": "images/games/wow.webp"
+  },
+  {
+    "title": "Smash Bros. Ultimate",
+    "genre": "Fighting",
+    "platform": "Nintendo Switch",
+    "year": 2018,
+    "description": "The latest entry in the Super Smash Bros. series.",
+    "image": "images/games/smash-ultimate.webp"
+  },
+  {
+    "title": "Hollow Knight",
+    "genre": "Metroidvania",
+    "platform": "PC",
+    "year": 2017,
+    "description": "A challenging Metroidvania game with a dark atmosphere.",
+    "image": "images/games/hollow-knight.webp"
+  },
+  {
+    "title": "Stardew Valley",
+    "genre": "RPG",
+    "platform": "PC",
+    "year": 2016,
+    "description": "An indie RPG focused on choices and consequences.",
+    "image": "images/games/stardew-valley.webp"
+  },
+  {
+    "title": "overwatch",
+    "genre": "FPS",
+    "platform": "PC",
+    "year": 2016,
+    "description": "A team-based multiplayer first-person shooter game.",
+    "image": "images/games/overwatch.webp"
+  },
+  {
+    "title": "Minecraft",
+    "genre": "Action",
+    "platform": "Multipleplatform",
+    "year": 2011,
+    "description": "A sandbox game about building and exploring.",
+    "image": "images/games/minecraft.webp"
+  },
+  {
+    "title": "Brawlhalla",
+    "genre": "Fighting",
+    "platform": "PC",
+    "year": 2017,
+    "description": "A competitive multiplayer fighting game.",
+    "image": "images/games/brawlhalla.webp"
+  },
+  {
+    "title": "league of legends",
+    "genre": "MOBA",
+    "platform": "PC",
+    "year": 2009,
+    "description": "A multiplayer online battle arena game.",
+    "image": "images/games/lol.webp"
+  },
+  {
+    "title": "Counter-Strike: Global Offensive",
+    "genre": "FPS",
+    "platform": "PC",
+    "year": 2012,
+    "description": "A competitive multiplayer first-person shooter game.",
+    "image": "images/games/csgo.webp"
+  },
+  {
+    "title": "OverCooked",
+    "genre": "RPG",
+    "platform": "PC",
+    "year": 2016,
+    "description": "An indie RPG focused on choices and consequences.",
+    "image": "images/games/overcooked.webp"
+  }
+]

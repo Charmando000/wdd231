@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore a curated list of video games with interactive storytelling and immersive gameplay experiences.">
+  <meta name="author" content="Armando Fernandez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Pixel & Story | Games">
+  <meta property="og:description" content="Discover amazing video games with great stories.">
+  <meta property="og:type" content="website">
+  
+  <title>Pixel & Story | Games</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/games.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pixel & Story</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Game Collection</h1>
+    <p>Explore our curated collection of exceptional games with compelling stories and immersive gameplay.</p>
+    <section id="games-grid"></section>
+  </main>
+
+  <!-- Modal Dialog for Game Details -->
+  <dialog id="game-modal">
+    <div id="modal-content"></div>
+    <button id="close-modal">Close</button>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2026 Pixel & Story. All rights reserved.</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <script src="scripts/dates.js" type="module"></script>
+  </footer>
+</body>
+</html>

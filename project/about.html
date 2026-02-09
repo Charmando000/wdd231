@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="About the Pixel & Story project and its creator, Armando Fernandez.">
+  <meta name="author" content="Armando Fernandez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Pixel & Story | About">
+  <meta property="og:description" content="Learn about the Pixel & Story project.">
+  <meta property="og:type" content="website">
+  
+  <title>Pixel & Story | About</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pixel & Story</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About This Project</h1>
+    
+    <section>
+      <h2>Project Overview</h2>
+      <p>Pixel & Story is a web application created as a final project for WDD 231: Web Frontend Development. 
+         This site showcases the integration of HTML, CSS, and JavaScript to create a dynamic, responsive, and 
+         user-friendly experience.</p>
+      <p>The project demonstrates proficiency in:</p>
+      <ul>
+        <li>Responsive Web Design (Mobile First)</li>
+        <li>DOM Manipulation and Event Handling</li>
+        <li>Asynchronous JavaScript (Fetch API)</li>
+        <li>Local Storage for User Preferences</li>
+        <li>Accessibility Best Practices</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tell Us About Yourself</h2>
+      <form action="form-action.html" method="get">
+        <label for="user-name">
+          Name:
+          <input type="text" id="user-name" name="name" required>
+        </label>
+
+        <label for="user-email">
+          Email:
+          <input type="email" id="user-email" name="email" required>
+        </label>
+
+        <label for="favorite-genre">
+          Favorite Game Genre:
+          <input type="text" id="favorite-genre" name="genre" placeholder="e.g., RPG, Action, Adventure">
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pixel & Story. All rights reserved.</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <script src="scripts/dates.js" type="module"></script>
+  </footer>
+</body>
+</html>

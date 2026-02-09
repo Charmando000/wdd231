@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Form submission confirmation page for Pixel & Story.">
+  <meta name="author" content="Armando Fernandez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel & Story | Form Confirmation</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>Pixel & Story</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Thank You for Your Submission!</h1>
+      <p>We've received your information. Here's what you provided:</p>
+      
+      <div id="output" style="background-color: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+        <!-- Form data will be displayed here via JavaScript -->
+      </div>
+      
+      <p><a href="games.html" style="display: inline-block; margin-top: 1rem;">← Back to Games</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pixel & Story. All rights reserved.</p>
+    <p><a href="attributions.html">Attributions</a></p>
+  </footer>
+
+  <script>
+    // ================================================
+    // FORM ACTION PAGE - DISPLAY SUBMITTED DATA
+    // ================================================
+    
+    // Extract URL Search Parameters from the form submission
+    const params = new URLSearchParams(window.location.search);
+    
+    // Wait for DOM to load before manipulating
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get form values from URL parameters
+      const name = params.get('name') || 'Not provided';
+      const email = params.get('email') || 'Not provided';
+      const genre = params.get('genre') || 'Not provided';
+      
+      // Use template literals to display the data dynamically
+      document.getElementById('output').innerHTML = `
+        <h2>Your Information</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Favorite Genre:</strong> ${genre}</p>
+      `;
+    });
+  </script>
+</body>
+</html>

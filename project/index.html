@@ -2,65 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Site plan for the Pixel & Story website project.">
+  <meta name="description" content="Pixel & Story: Discover exceptional video games with immersive storytelling and engaging gameplay experiences.">
   <meta name="author" content="Armando Fernandez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel & Story - Site Plan</title>
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Pixel & Story - Your Ultimate Gaming Guide">
+  <meta property="og:description" content="Explore exceptional video games with compelling stories and immersive experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/project">
+  
+  <title>Pixel & Story - Your Ultimate Gaming Guide</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/wdd231/project/style/site-plan.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
   <header>
     <h1>Pixel & Story</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Site Name</h2>
-      <p><strong>Pixel & Story</strong> represents the combination of video games as a visual medium and interactive storytelling.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Pixel & Story</h1>
+      <p>Discover exceptional video games with immersive storytelling and engaging gameplay experiences.</p>
+      <p>From epic adventures to indie masterpieces, explore games that define interactive entertainment.</p>
     </section>
 
+    <!-- Featured Games Preview -->
     <section>
-      <h2>Site Purpose</h2>
-      <p>The site provides information about video games and interactive story-based experiences, including game details, genres, and dynamic content.</p>
+      <h2>Featured Highlights</h2>
+      <p>Browse our curated collection of games spanning multiple genres and platforms. Each game offers unique 
+         storytelling, memorable characters, and engaging mechanics.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
+        <article>
+          <h3>Diverse Genres</h3>
+          <p>From action and adventure to RPGs and indie games, discover titles across all genres.</p>
+        </article>
+        <article>
+          <h3>Rich Stories</h3>
+          <p>Experience compelling narratives that engage players and create emotional connections.</p>
+        </article>
+        <article>
+          <h3>Multiple Platforms</h3>
+          <p>Find games available on PC, consoles, and other gaming platforms.</p>
+        </article>
+      </div>
     </section>
 
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <h2>Ready to Explore?</h2>
+      <p>Visit our <a href="games.html">Games</a> page to browse our complete collection and mark your favorites!</p>
+      <p>Use the favorite button to save your preferences locally on your device.</p>
+    </section>
+
+    <!-- Project Information -->
     <section>
-      <h2>Scenarios</h2>
+      <h2>About This Project</h2>
+      <p>Pixel & Story is a web development project showcasing modern web technologies including:</p>
       <ul>
-        <li>What video games offer strong storytelling and immersive experiences?</li>
-        <li>How can I explore and compare different video games by genre or platform?</li>
+        <li><strong>Responsive Design:</strong> Works seamlessly on mobile, tablet, and desktop devices</li>
+        <li><strong>Dynamic Content:</strong> Games displayed dynamically using JavaScript and the Fetch API</li>
+        <li><strong>Local Storage:</strong> User preferences saved automatically in the browser</li>
+        <li><strong>Accessibility:</strong> WCAG compliant with proper semantic HTML and color contrast</li>
+        <li><strong>Dark Mode:</strong> Toggle between light and dark themes with your preference saved</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Color Scheme</h2>
-      <ul>
-        <li><span class="color primary"></span> #1e1e2f – Header, footer, background</li>
-        <li><span class="color light"></span> #f5f5f5 – Content background</li>
-        <li><span class="color accent"></span> #ff9800 – Accents and highlights</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Typography</h2>
-      <p><strong>Montserrat</strong> is used for headings.</p>
-      <p><strong>Roboto</strong> is used for body text.</p>
-    </section>
-
-    <section>
-      <h2>Wireframe</h2>
-      <p>Wireframes for mobile and desktop views will define the layout of the home page, including header, navigation, content sections, and footer.</p>
     </section>
   </main>
 
   <footer>
-    <p>WDD 231 – Site Plan</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <script src="scripts/dates.js" type="module"></script>
   </footer>
 </body>
 </html>
