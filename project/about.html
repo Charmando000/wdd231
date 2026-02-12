@@ -6,19 +6,32 @@
   <meta name="author" content="Armando Fernandez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Favicon, Fonts, Normalize and Open Graph -->
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
   <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Pixel & Story | About">
-  <meta property="og:description" content="Learn about the Pixel & Story project.">
+  <meta property="og:title" content="About Pixel & Story - Gaming Web Project">
+  <meta property="og:description" content="Learn about the Pixel & Story web development project, its creator Armando Fernandez, and the technologies used to build it.">
+  <meta property="og:url" content="https://charmando000.github.io/wdd231/project">
+  <meta property="og:image" content="https://charmando000.github.io/wdd231/project/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
   
   <title>Pixel & Story | About</title>
-
+  
+  <link rel="stylesheet" href="../style/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="scripts/main.js"></script>
+  <script src="scripts/dates.js" type="module"></script>
 </head>
 <body>
   <header>
-    <h1>Pixel & Story</h1>
+    <div class="site-title">Pixel & Story</div>
     <nav>
       <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
       <ul id="nav-links">
@@ -73,7 +86,6 @@
 
   <footer>
     <p>&copy; 2026 Pixel & Story. All rights reserved.</p>
-    <script src="scripts/dates.js" type="module"></script>
     <p><a href="attributions.html">Attributions</a></p>
     
   </footer>

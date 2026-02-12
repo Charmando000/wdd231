@@ -54,3 +54,40 @@ if (themeToggle) {
   });
 }
 
+// Insert last-modified timestamp in footer with machine-readable datetime attribute
+function insertLastModified() {
+  try {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+
+    // Parse document.lastModified into a Date object
+    const lastModRaw = document.lastModified;
+    const lastModDate = new Date(lastModRaw);
+    const iso = isNaN(lastModDate.getTime()) ? new Date().toISOString() : lastModDate.toISOString();
+
+    const formatted = new Date(iso).toLocaleString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+      hour: 'numeric', minute: '2-digit', hour12: true
+    });
+
+    let el = document.getElementById('last-modified');
+    if (!el) {
+      el = document.createElement('p');
+      el.id = 'last-modified';
+      el.className = 'muted';
+    }
+
+    el.textContent = `Last modified: ${formatted}`;
+    el.setAttribute('datetime', iso);
+
+    // Append to footer if not already present
+    if (!footer.contains(el)) footer.appendChild(el);
+  } catch (e) {
+    // fail silently
+    console.error('insertLastModified error', e);
+  }
+}
+
+// Run on DOMContentLoaded to ensure footer exists
+document.addEventListener('DOMContentLoaded', insertLastModified);
+

@@ -6,20 +6,31 @@
   <meta name="author" content="Armando Fernandez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Favicon, Fonts, Normalize and Open Graph -->
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="Pixel & Story - Your Ultimate Gaming Guide">
   <meta property="og:description" content="Explore exceptional video games with compelling stories and immersive experiences.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/project">
+  <meta property="og:url" content="https://charmando000.github.io/wdd231/project">
+  <meta property="og:image" content="https://charmando000.github.io/wdd231/project/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   
   <title>Pixel & Story - Your Ultimate Gaming Guide</title>
-
+  
+  <link rel="stylesheet" href="../style/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="scripts/main.js"></script>
+  <script src="scripts/dates.js" type="module"></script>
 </head>
 <body>
   <header>
-    <h1>Pixel & Story</h1>
+    <div class="site-title">Pixel & Story</div>
     <nav>
       <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
       <ul id="nav-links">
@@ -34,7 +45,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Welcome to Pixel & Story</h1>
+      <div class="site-title">Pixel & Story</div>
       <p>Discover exceptional video games with immersive storytelling and engaging gameplay experiences.</p>
       <p>From epic adventures to indie masterpieces, explore games that define interactive entertainment.</p>
     </section>
@@ -44,7 +55,7 @@
       <h2>Featured Highlights</h2>
       <p>Browse our curated collection of games spanning multiple genres and platforms. Each game offers unique 
          storytelling, memorable characters, and engaging mechanics.</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
+      <div class="features-grid">
         <article>
           <h3>Diverse Genres</h3>
           <p>From action and adventure to RPGs and indie games, discover titles across all genres.</p>
@@ -83,7 +94,7 @@
 
   <footer>
     <p>&copy; 2026 Pixel & Story. All rights reserved.</p>
-    <script src="scripts/dates.js" type="module"></script>
+    
     <p><a href="attributions.html">Attributions</a></p>
   </footer>
 </body>
