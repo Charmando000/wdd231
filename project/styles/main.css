@@ -58,7 +58,7 @@ body {
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   color: var(--text-primary);
@@ -74,6 +74,10 @@ h2 {
 
 h2 {
   font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -194,7 +198,7 @@ section.hero {
 }
 
 section.hero h1 {
-  color: #fff;
+  color: var(--accent-orange);
   font-size: 2.5rem;
   margin-bottom: var(--spacing-md);
 }
